@@ -1,120 +1,141 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <meta charset="UTF-8">
     <title>Portifolio</title>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-  <!--
-    <header class="cabecalho">
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
-        </nav>
-    </header> -->
     <main class="apresentacao">
         
         
         <section class="apresentacao__conteudo">
-            <form>
-                <div class="input-container">
-                    <label>Nome Completo</label>
-                    <input>
-                </div>  
-                <div class="input-container">
-                    <label>CPF</label>
-                    <input>
-                </div>
-                <div class="input-container">
-                    <label>E-mail</label>
-                    <input>
-                </div>
-                <div class="input-container">
-                    <label>WebSite</label>
-                    <input>
-                </div>
-                <div class="input-container">
-                    <label>Endereço</label>
-                    <input>
-                </div>
-                <div class="input-container">
-                    <label>Bairro</label>
-                    <input>
-                    <label>Cidade</label>
-                    <input>
-                </div>
-                <div class="input-container">
-                    <label>Bairro</label>
-                    <select>
-                        <option>AC</option>
-                        <option>AL</option>
-                        <option>AP</option>
-                        <option>AM</option>
-                        <option>BA</option>
-                        <option>CE</option>
-                        <option>ES</option>
-                        <option>GO</option>
-                        <option>MA</option>
-                        <option>MT</option>
-                        <option>MS</option>
-                        <option>MG</option>
-                        <option>PA</option>
-                        <option>PB</option>
-                        <option>PR</option>
-                        <option>PE</option>
-                        <option>PI</option>
-                        <option>RJ</option>
-                        <option>RN</option>
-                        <option>RS</option>
-                        <option>RO</option>
-                        <option>RR</option>
-                        <option>SP</option>
-                        <option>SE</option>
-                        <option>TO</option>
-                    </select>
-                </div>
-                <div class="input-container">
-                    <label>Bairro</label>
-                    <input>
-                    <label>Cidade</label>
-                    <input>
-                </div>
-                <div class="input-container">
-                    <label>Bairro</label>
-                    <input>
-                    <label>Cidade</label>
-                    <input>
-                </div>
-                <div class="input-container">
-                    <label>Bairro</label>
-                    <input>
-                    <label>Cidade</label>
-                    <input>
-                </div>
-                <div class="input-container">
-                    <label>Bairro</label>
-                    <input type="radio">
-                    <label>Cidade</label>
-                    <input>
-                </div>
+            <form action="" method="post">
+                <fieldset class="form-1">
+                    
+                
+                    <div class="input-container">
+                        <label>Nome Completo</label>
+                        <input>
+                    </div>  
+                    <div class="input-container">
+                        <label>CPF</label>
+                        <input>
+                    </div>
+                    <div class="input-container">
+                        <label>E-mail</label>
+                        <input>
+                    </div>
+                    <div class="input-container">
+                        <label>WebSite</label>
+                        <input>
+                    </div>
+                    <div class="input-container">
+                        <label>Endereço</label>
+                        <input>
+                    </div>
+                </fieldset> 
+                <fieldset class="form-2">
+                    <div class="input-container">
+                        <label>Bairro</label>
+                        <input>
+                        <label>Cidade</label>
+                        <input>
+                    </div>
+                    <div class="input-container">
+                        <label>Cep</label>
+                        <input>
+                        <label>Bairro</label>
+                        <select>
+                            <option>AC</option>
+                            <option>AL</option>
+                            <option>AP</option>
+                            <option>AM</option>
+                            <option>BA</option>
+                            <option>CE</option>
+                            <option>ES</option>
+                            <option>GO</option>
+                            <option>MA</option>
+                            <option>MT</option>
+                            <option>MS</option>
+                            <option>MG</option>
+                            <option>PA</option>
+                            <option>PB</option>
+                            <option>PR</option>
+                            <option>PE</option>
+                            <option>PI</option>
+                            <option>RJ</option>
+                            <option>RN</option>
+                            <option>RS</option>
+                            <option>RO</option>
+                            <option>RR</option>
+                            <option>SP</option>
+                            <option>SE</option>
+                            <option>TO</option>
+                        </select>
+                    </div>
+                    <div class="input-container">
+                        <label>Telefone</label>
+                        <input>
+                    </div>
+                    <div class="input-container">
+                        <label>Data Nascimento</label>
+                        <input>
+                        <label>Sexo</label>
+                            <div class="input-container">
+                                <input type="radio">
+                                <label>M</label>
+                                <input type="radio">
+                                <label>F</label>
+                            </div>
+                        <input>
+                    </div>
+                    <div class="input-container">
+                        <label>Celular</label>
+                        <input>
+                        <label>Est.Civel</label>
+                        <select>
+                            <option>Solterio(a)</option>
+                            <option>Casado(a)</option>
+                    </div>
+                    <div class="input-container">
+                        <label>Login</label>
+                        <input>
+                        <label type="password">Senha</label>
+                        <input>
+                    </div>
+                </fieldset>
+                <fieldset>
                 <p>Deseja receber informações sobre os seguintes assuntos abaixo:</p>
+                <div>
+                    <input type="checkbox"> <label>Tecnologia</label>
+                    <input type="checkbox"> <label>Esportes</label>
+                    <input type="checkbox"> <label>Automóveis</label>
+                    <input type="checkbox"> <label>Culinária</label>
+                    <input type="checkbox"> <label>Política</label>
+                    <input type="checkbox"> <label>Policial</label>
+                    <input type="checkbox"> <label>Tempo</label>
+                </div>
+                <div>
+                     <input type="checkbox"> <label>Cultura</label>
+                     <input type="checkbox"> <label>Economia</label>
+                     <input type="checkbox"> <label>Jogos</label>
+                     <input type="checkbox"> <label>Educação</label>
+                     <input type="checkbox"> <label>Viagem</label>
+                     <input type="checkbox"> <label>Empregos</label>
+                     <input type="checkbox"> <label>Moda e Estilo</label>
+    
+                </div>
+                <div>
+                    <input type="checkbox"> 
+                    <label>Li as regras de cadastro e autorizo a criação de usuário</label>
+                </div>
+                <button type="submit">Confimar</button><button>Retomar</button>
             </form>
             
                 
         </section>     
     </main>
-    <footer class="rodape">
-        <P>by Bruno</P>
-    </footer>
-    <script src="script.js" defer></script>
-    
-    <div id="overlay">
-
-      <div id="popup">
-        <p id="textoPopUp">Clique</p>
-        <button class="botaoPopup" onclick="fecharPopup()">Fechar</button>
-      </div>
-    </div>
     
 </body>
 </html>
