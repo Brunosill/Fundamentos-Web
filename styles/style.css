@@ -4,26 +4,28 @@
 }
 
 body {
-    box-sizing: border-box;
-}
-
-fieldset{
-    border: none;
-}
-.apresentacao{
     display: flex;
+    padding: 0.5em;
     justify-content: center;
-    align-content: center;
 }
 
-.input-container{
+.formulario {
+    width: 60%;
+    justify-content: center;
+    display: inline;
+    row-gap: 20px;
+}
+
+.form-1{
     display: grid;
     grid-template-columns: auto 1fr;
-    grid-template-rows: 5;
-    gap: 10px;
-    grid-row-gap: 20xp;
 }
-
-.input{
-    width: 80%;
+section{
+    size: 10px;
+}
+.form-2{
+    
+    display: grid;
+    grid-template-columns: 10% auto 10% auto;
+    grid: 20px;
 }
