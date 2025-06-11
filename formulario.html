@@ -5,129 +5,145 @@
     <title>Portifolio</title>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
+ 
 <body>
+
+    <header>
+        <img src="logo.png" class=""/>
+    </header>
+
     <main class="formulario">
         
         <form action="" method="post">
+
             <fieldset class="form-1">
                 
-            
-                
                 <label>Nome Completo</label>
-                <input>
-                
+                <input id="nome" type="text" required>
                 
                 <label>CPF</label>
-                <input>
+                <input id="cpf" required>
                
                 <label>E-mail</label>
-                <input>
+                <input type="email" id="email" required>
                 
                 <label>WebSite</label>
-                <input>
+                <input type="url" id="url">
                 </div>
                 
                 <label>Endereço</label>
-                <input>
+                <input id="endereco" type="text" required>
                 
             </fieldset> 
+
             <fieldset class="form-2">
-                
-                <label>Bairro</label>
-                <input>
-                <label>Cidade</label>
-                <input>
-                
-                
-                <label>Cep</label>
-                <input>
-                <label>Bairro</label>
-                <select>
-                        <option>AC</option>
-                        <option>AL</option>
-                        <option>AP</option>
-                        <option>AM</option>
-                        <option>BA</option>
-                        <option>CE</option>
-                        <option>ES</option>
-                        <option>GO</option>
-                        <option>MA</option>
-                        <option>MT</option>
-                        <option>MS</option>
-                        <option>MG</option>
-                        <option>PA</option>
-                        <option>PB</option>
-                        <option>PR</option>
-                        <option>PE</option>
-                        <option>PI</option>
-                        <option>RJ</option>
-                        <option>RN</option>
-                        <option>RS</option>
-                        <option>RO</option>
-                        <option>RR</option>
-                        <option>SP</option>
-                        <option>SE</option>
-                        <option>TO</option>
-                </select>
-                
-                <div class="input-container">
-                    <label>Telefone</label>
-                    <input>
+                <div>
+                    <label>Bairro</label>
+                    <input type="text" id="bairro" required>
+                    <label>Cidade</label>
+                    <input id="cidade" type="text" required>
                 </div>
-                <div class="input-container">
+                 
+                <div>
+                    <label type="number">Cep</label>
+                    <input id="cep" required>
+                    <label>Estado</label>
+                    <select id="estado" required>
+                            <option value="AC">AC</option>
+                            <option value="AL">AL</option>
+                            <option value="AP">AP</option>
+                            <option value="AM">AM</option>
+                            <option value="BA">BA</option>
+                            <option value="CE">CE</option>
+                            <option value="ES">ES</option>
+                            <option value="GO">GO</option>
+                            <option value="MA">MA</option>
+                            <option value="MT">MT</option>
+                            <option value="MS">MS</option>
+                            <option value="MG">MG</option>
+                            <option value="PA">PA</option>
+                            <option value="PB">PB</option>
+                            <option value="PR">PR</option>
+                            <option value="PE">PE</option>
+                            <option value="PI">PI</option>
+                            <option value="RJ">RJ</option>
+                            <option value="RN">RN</option>
+                            <option value="RS">RS</option>
+                            <option value="RO">RO</option>
+                            <option value="RR">RR</option>
+                            <option value="SP">SP</option>
+                            <option value="SE">SE</option>
+                            <option value="TO">TO</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label >Telefone</label>
+                    <input id="telefone" type="tel" required>
+                </div>
+
+                <div >
                     <label>Data Nascimento</label>
-                    <input>
+                    <input id="nascimento" type="date" required>
                     <label>Sexo</label>
-                        <div class="input-container">
-                            <input type="radio">
-                            <label>M</label>
-                            <input type="radio">
-                            <label>F</label>
-                        </div>
-                    <input>
+                        
+                        <input type="radio" required name="sexo" id="rm" value="m"><label for="rm">M</label>
+                        <input type="radio" required name="sexo" id="rf" value="f"><label for="rf">F</label>
                 </div>
-                <div class="input-container">
+
+                <div>
+
                     <label>Celular</label>
-                    <input>
-                    <label>Est.Civel</label>
-                    <select>
-                        <option>Solterio(a)</option>
-                        <option>Casado(a)</option>
+                    <input type="tel" id="celular">
+
+                    <label >Est.Civel</label>
+                    <select id="estado-civel" required>
+                        <option value="solterio(a)">Solterio(a)</option>
+                        <option value="casado(a)">Casado(a)</option>
+                        <option value="viuvo(a)">Viúvo(a)</option>
+                        <option value="divorciado(a)">Divorciado(a)</option>
                 </div>
-                <div class="input-container">
+
+                <div>
                     <label>Login</label>
-                    <input>
+                    <input type="text" id="login" required>
                     <label type="password">Senha</label>
-                    <input>
+                    <input type="password" id="pwd" required>
                 </div>
+
             </fieldset>
+
             <fieldset>
                 <p>Deseja receber informações sobre os seguintes assuntos abaixo:</p>
                 <div>
-                    <input type="checkbox"> <label>Tecnologia</label>
-                    <input type="checkbox"> <label>Esportes</label>
-                    <input type="checkbox"> <label>Automóveis</label>
-                    <input type="checkbox"> <label>Culinária</label>
-                    <input type="checkbox"> <label>Política</label>
-                    <input type="checkbox"> <label>Policial</label>
-                    <input type="checkbox"> <label>Tempo</label>
+                    <input type="checkbox" id="tecnologia"  value="true"> <label>Tecnologia</label>
+                    <input type="checkbox" id="esportes"  value="true"> <label>Esportes</label>
+                    <input type="checkbox" id="automoveis"  value="true"> <label>Automóveis</label>
+                    <input type="checkbox" id="culinaria"  value="true"> <label>Culinária</label>
+                    <input type="checkbox" id="policial"  value="true"> <label>Policial</label>
+                    <input type="checkbox" id="tempo"  value="true"> <label>Tempo</label>
                 </div>
                 <div>
-                    <input type="checkbox"> <label>Cultura</label>
-                    <input type="checkbox"> <label>Economia</label>
-                    <input type="checkbox"> <label>Jogos</label>
-                    <input type="checkbox"> <label>Educação</label>
-                    <input type="checkbox"> <label>Viagem</label>
-                    <input type="checkbox"> <label>Empregos</label>
-                    <input type="checkbox"> <label>Moda e Estilo</label>
+                    <input type="checkbox" id="cultura"  value="true"> <label>Cultura</label>
+                    <input type="checkbox" id="economia"  value="true"> <label>Economia</label>
+                    <input type="checkbox" id="jogos"  value="true"> <label>Jogos</label>
+                    <input type="checkbox" id="educação"  value="true"> <label>Educação</label>
+                    <input type="checkbox" id="viagem"  value="true"> <label>Viagem</label>
+                    <input type="checkbox" id="empregos"  value="true"> <label>Empregos</label>
+                    <input type="checkbox" id="moda"  value="true"> <label>Moda e Estilo</label>
     
                 </div>
+
                 <div>
-                    <input type="checkbox"> 
+                    <input type="checkbox" id="termor"  value="true" required> 
                     <label>Li as regras de cadastro e autorizo a criação de usuário</label>
                 </div>
-                <button type="submit">Confimar</button><button>Retomar</button>
+
+                <button type="submit">Confimar</button><button type="reset">Retomar</button>
+            
             </fieldset>
+                    
+              
         </form>
             
     </main>

@@ -1,31 +1,55 @@
-* {
-    margin: 0;
+
+* { 
     padding: 0;
+    margin: 0;
+}
+html{
+    height: 100%;
+}
+body {
+    margin: 0 auto;
+    display: center;
+    position: relative;
+    max-width: 60%;
 }
 
-body {
+header{
     display: flex;
-    padding: 0.5em;
+    padding: 60px;
     justify-content: center;
+}
+
+.logo{
+    height: 120px;
 }
 
 .formulario {
-    width: 60%;
+    
     justify-content: center;
     display: inline;
     row-gap: 20px;
+    height: 100%;
+    
+}
+
+fieldset {
+    border: none;
+    
 }
 
 .form-1{
     display: grid;
+    grid-column: 50px;
     grid-template-columns: auto 1fr;
-}
-section{
-    size: 10px;
-}
-.form-2{
     
+
+}
+
+.form-2{
     display: grid;
-    grid-template-columns: 10% auto 10% auto;
+    grid-template-columns: auto;
     grid: 20px;
+}
+select {
+    size: 10%;
 }
